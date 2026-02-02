@@ -6,15 +6,15 @@
 This is a full-stack personal portfolio website built to showcase my skills, projects, and experience as an AI Engineer & Full-Stack Developer.
 The application includes a responsive frontend, a Python backend API, and a contact form that stores user messages.
 
-🛠️ Tech Stack Used
+**🛠️ Tech Stack Used**
 
-🔹 Frontend
+**🔹 Frontend**
 HTML5
 CSS3
 JavaScript (Vanilla JS)
 Responsive UI with animations
 
-🔹 Backend
+**🔹 Backend**
 Python
 Flask (REST API)
 CORS enabled for frontend-backend communication
@@ -34,18 +34,18 @@ JSON (for API communication)
 personal-portfolio/
 │
 ├── backend/
-│   └── app.py              # Flask backend API
+│   └── app.py              
 │
 ├── frontend/
-│   ├── index.html          # Main UI
-│   ├── style.css           # Styling
-│   ├── script.js           # Frontend logic & API calls
-│   └── images/             # Assets
+│   ├── index.html         
+│   ├── style.css           
+│   ├── script.js           
+│   └── images/            
 │
 ├── resume/
 │   └── BCA_Fresher_Resume_(1)[1].pdf
 │
-├── venv/                   # Python virtual environment
+├── venv/                   
 │
 ├── .gitignore
 ├── README.md
@@ -60,16 +60,13 @@ Data is stored in the database
 Backend sends a JSON response
 Frontend shows success or error message
 
-🌐 API Details
+**🌐 API Details**
+
 Contact API
-
 Endpoint: /contact
-
 Method: POST
-
 Data Format: JSON
-
-Example request:
+**Example request:**
 
 {
   "name": "John Doe",
@@ -79,57 +76,54 @@ Example request:
 }
 
 
-Example response:
+**Example response:**
 
 {
   "success": true,
   "message": "Message saved successfully"
 }
 
-▶️ How to Run the Project
+**▶️ How to Run the Project**
  
-1️⃣ Backend Setup
+**1️⃣ Backend Setup**
 cd backend
 python app.py
 
 
 Backend will run on:
-
 http://127.0.0.1:5000
 
-2️⃣ Frontend Setup
+**2️⃣ Frontend Setup**
 Open the file directly or using Live Server:
 frontend/index.html
 
-✨ Features
+**✨ Features**
 
-Responsive portfolio design
-Smooth animations and transitions
-Contact form with backend API integration
-Database storage for messages
-Clean and maintainable structure
+-Responsive portfolio design
+-Smooth animations and transitions
+-Contact form with backend API integration
+-Database storage for messages
+-Clean and maintainable structure
 
-🎯 Learning Outcomes
+**🎯 Learning Outcomes**
 
-Full-stack development workflow
-REST API creation using Flask
-Frontend ↔ Backend communication using JSON
-Database integration
-GitHub project structuring
+-Full-stack development workflow
+-REST API creation using Flask
+-Frontend ↔ Backend communication using JSON
+-Database integration
+-GitHub project structuring
 
-📌 Future Enhancements
+**📌 Future Enhancements**
 
-Add a responsive Gmail SMTP notification
+-Add a responsive Gmail SMTP notification
 
-👤 Author
+**👤 Author**
 
 Megaraj M
 AI Engineer & Full-Stack Developer
 
-🔗 GitHub: https://github.com/Meg8834
-
-🔗 LinkedIn: https://www.linkedin.com/in/megaraj-m-7b4b79341/
+**🔗 GitHub: https://github.com/Meg8834**
+**🔗 LinkedIn: https://www.linkedin.com/in/megaraj-m-7b4b79341/**
 
 🏁 Conclusion
-
 This project demonstrates a real-world full-stack web application with clean separation of frontend and backend, API integration, and database usage — suitable for academic submission, interviews, and portfolio showcasing.
