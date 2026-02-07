@@ -60,7 +60,7 @@ const projects = [
     category: "web-dev",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
     github: "https://github.com/Meg8834/personal-portfolio-",
-    demo: "https://megarajm.dev",
+    demo: "https://megaraj-portfolio.netlify.app/",
     features: [
       "Responsive design",
       "Contact form with backend",
