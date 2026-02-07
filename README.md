@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 🚀 Personal Portfolio – Full Stack Web Application
 📌 Project Overview
 
@@ -292,8 +292,3 @@ This project demonstrates a **real-world full-stack web application** with clean
 
 ---
 
-<<<<<<< HEAD
-This project demonstrates a real-world full-stack web application with API integration, database handling, and a responsive frontend.
-It is suitable for academic submission, interviews, and professional portfolio showcasing.
-=======
->>>>>>> ecb2ed775bb2fbaf152b0d06525775789fd0846f
