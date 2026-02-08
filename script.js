@@ -347,7 +347,7 @@ contactForm.addEventListener('submit', async (e) => {
     };
 
     try {
-        const response = await fetch('http://127.0.0.1:5000/contact', {
+        const response = await fetch('https://portfolio-backend-89dr.onrender.com/contact', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
