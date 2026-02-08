@@ -357,16 +357,16 @@ contactForm.addEventListener('submit', async (e) => {
 
         const result = await response.json();
 
-        if (result.success) {
+        if (response.ok && result.success) {
             formMessage.textContent = result.message;
             formMessage.className = 'form-message success';
             contactForm.reset();
         } else {
-            throw new Error('Failed');
+            throw new Error(result.message || 'Failed to send message');
         }
 
     } catch (error) {
-        formMessage.textContent = 'Something went wrong. Please try again.';
+        formMessage.textContent = error.message || 'Something went wrong. Please try again.';
         formMessage.className = 'form-message error';
     }
 });
