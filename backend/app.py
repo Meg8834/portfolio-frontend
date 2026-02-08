@@ -1,6 +1,7 @@
 import os
 import sqlite3
 from pathlib import Path
+from urllib.parse import urlparse
 
 from flask import Flask, jsonify, request
 from flask_cors import CORS
@@ -47,7 +48,17 @@ if postgres_url:
     try:
         import psycopg2
 
-        db = psycopg2.connect(postgres_url, sslmode=os.environ.get("PGSSLMODE", "require"))
+        connect_kwargs = {}
+        parsed_url = urlparse(postgres_url)
+        pg_sslmode = os.environ.get("PGSSLMODE")
+        if pg_sslmode:
+            connect_kwargs["sslmode"] = pg_sslmode
+        elif parsed_url.hostname and parsed_url.hostname.endswith(".internal"):
+            connect_kwargs["sslmode"] = "disable"
+        else:
+            connect_kwargs["sslmode"] = "require"
+
+        db = psycopg2.connect(postgres_url, **connect_kwargs)
         cursor = db.cursor()
         cursor.execute(
             """
