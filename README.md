@@ -1,7 +1,5 @@
 
 
----
-
 ```md
 # 🚀 Personal Portfolio – Full Stack Web Application
 
@@ -20,7 +18,6 @@ It consists of a **responsive frontend**, a **Python-based backend API**, and a 
 * CSS3
 * JavaScript (Vanilla JS)
 * Responsive UI design
-* Project filtering and modal view
 * Smooth animations and transitions
 
 ### 🔹 Backend
@@ -28,7 +25,6 @@ It consists of a **responsive frontend**, a **Python-based backend API**, and a 
 * Python
 * Flask (REST API)
 * Flask-CORS (frontend–backend communication)
-* Gunicorn
 
 ### 🔹 Database
 
@@ -41,8 +37,6 @@ It consists of a **responsive frontend**, a **Python-based backend API**, and a 
 * Visual Studio Code
 * Python Virtual Environment (venv)
 * JSON (API data exchange format)
-* Netlify (Frontend Deployment)
-* Render (Backend Deployment)
 
 ---
 
@@ -61,10 +55,11 @@ personal-portfolio/
 │   ├── index.html          # Main portfolio UI
 │   ├── style.css           # Styling and layout
 │   ├── script.js           # Frontend logic & API calls
-│   ├── images/             # Images and assets
-│   └── resume/             # Resume files
+│   └── images/             # Images and assets
 │
-├── netlify.toml            # Netlify configuration
+├── resume/
+│   └── BCA_Fresher_Resume.pdf
+│
 ├── .gitignore
 ├── README.md
 └── LICENSE
@@ -120,8 +115,8 @@ personal-portfolio/
 
 ```bash
 cd backend
-python -m venv .venv
-.venv\Scripts\activate
+python -m venv venv
+venv\Scripts\activate
 pip install -r requirements.txt
 python app.py
 ```
@@ -137,7 +132,7 @@ http://127.0.0.1:5000
 ### 2️⃣ Frontend Setup
 
 * Open directly in browser **OR**
-* Use local server
+* Use Live Server
 
 ```text
 frontend/index.html
@@ -149,11 +144,10 @@ frontend/index.html
 
 * Fully responsive portfolio design
 * Clean and modern UI
-* Project filtering with modal preview
 * Contact form with backend API integration
 * PostgreSQL database storage for user messages
 * Clear separation of frontend and backend
-* Cloud deployment support
+* Maintainable and scalable project structure
 
 ---
 
@@ -163,7 +157,7 @@ frontend/index.html
 * REST API development using Flask
 * JSON-based frontend ↔ backend communication
 * PostgreSQL integration on Render
-* GitHub project structuring and deployment
+* GitHub project structuring and version control
 
 ---
 
@@ -173,8 +167,7 @@ frontend/index.html
 * Upgrade backend to **FastAPI**
 * Optimize PostgreSQL performance
 * Add authentication system
-* Admin dashboard for messages
-* Mobile app version
+* Cloud deployment (Render / AWS / Vercel)
 
 ---
 
@@ -190,10 +183,8 @@ AI Engineer & Full-Stack Developer
 
 ## 🏁 Conclusion
 
-This project demonstrates a **real-world full-stack web application** with proper separation of concerns, API integration, PostgreSQL database handling, and cloud deployment — making it suitable for **portfolio showcasing, academic submission, and technical interviews**.
-
-```
+This project demonstrates a **real-world full-stack web application** with proper separation of concerns, API integration, and PostgreSQL database handling — making it suitable for **portfolio showcasing, academic submission, and technical interviews**.
 
 
-Just tell 👍
+If you want next: resume project points or LinkedIn post — just tell 👍
 ```
